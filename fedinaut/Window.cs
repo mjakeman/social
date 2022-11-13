@@ -1,6 +1,7 @@
 using System.Reflection;
 using GObject;
 using Gtk;
+using Mastonet;
 
 namespace Fedinaut;
 
@@ -18,5 +19,16 @@ public class Window : ApplicationWindow
         var builder = new Builder("window.ui");
         var root = (Widget) builder.GetObject("root");
         SetChild(root);
+        
+        SetupMastodon();
+    }
+
+    async void SetupMastodon()
+    {
+        // var authClient = new AuthenticationClient("instanceUrl");
+        // var appRegistration = await authClient.CreateApp("Fedinaut", Scope.Read | Scope.Write | Scope.Follow);
+
+        // var assistant = Assistant.New();
+        // assistant.Present();
     }
 }
