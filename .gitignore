@@ -1,4 +1,5 @@
 ext/gir.core
+ext/blueprint-compiler
 .idea
 
 *.swp

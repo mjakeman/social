@@ -1,3 +1,4 @@
+using System.Reflection;
 using GObject;
 using Gtk;
 
@@ -10,7 +11,12 @@ public class Window : ApplicationWindow
 {
     public Window(Gio.Application app) : base(ConstructArgument.With("application", app))
     {
-        var label = Label.New("Text");
-        SetChild(label);
+        Title = "Fedinaut (Mastodon Client)";
+        DefaultHeight = 600;
+        DefaultWidth = 800;
+        
+        var builder = new Builder("window.ui");
+        var root = (Widget) builder.GetObject("root");
+        SetChild(root);
     }
 }
