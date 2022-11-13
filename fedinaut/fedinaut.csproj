@@ -1,13 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <ItemGroup>
+      <ProjectReference Include="..\ext\gir.core\src\Libs\Adw-1\Adw-1.csproj" />
       <ProjectReference Include="..\ext\gir.core\src\Libs\Gtk-4.0\Gtk-4.0.csproj" />
       <ProjectReference Include="..\ext\gir.core\src\Libs\Gio-2.0\Gio-2.0.csproj" />
       <ProjectReference Include="..\ext\gir.core\src\Libs\GObject-2.0\GObject-2.0.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Mastonet" Version="1.9.0" />
+        <PackageReference Include="Mastonet" Version="1.9.0" />
     </ItemGroup>
 
     <PropertyGroup>

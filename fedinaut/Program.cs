@@ -3,6 +3,8 @@
 using Fedinaut;
 using Gio;
 
+Adw.Module.Initialize();
+
 void OnActivate(Application app, EventArgs e)
 {
     Console.WriteLine("Hello!");
@@ -11,7 +13,7 @@ void OnActivate(Application app, EventArgs e)
     window.Present();
 }
 
-var app = Gtk.Application.New("com.mattjakeman.fedinaut", ApplicationFlags.FlagsNone);
+var app = Adw.Application.New("com.mattjakeman.fedinaut", ApplicationFlags.FlagsNone);
 app.OnActivate += OnActivate;
 app.Run();
 
