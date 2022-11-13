@@ -1,6 +1,6 @@
 echo "Installing Dependencies"
 echo " > gir.core"
-git clone https://github.com/gircore/gir.core ext/gir.core --init --recursive
+git clone https://github.com/gircore/gir.core ext/gir.core --recursive
 echo " > blueprint-compiler"
 git clone https://gitlab.gnome.org/jwestman/blueprint-compiler.git ext/blueprint-compiler
 
