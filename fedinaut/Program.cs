@@ -1,11 +1,14 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using Gtk;
+using Fedinaut;
 using Gio;
 
-void OnActivate(Gio.Application app, EventArgs e)
+void OnActivate(Application app, EventArgs e)
 {
     Console.WriteLine("Hello!");
+    
+    var window = new Window(app);
+    window.Present();
 }
 
 var app = Gtk.Application.New("com.mattjakeman.fedinaut", ApplicationFlags.FlagsNone);

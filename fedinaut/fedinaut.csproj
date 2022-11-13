@@ -1,7 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <ItemGroup>
-      <ProjectReference Include="..\gir.core\src\Libs\Gtk-4.0\Gtk-4.0.csproj" />
+      <ProjectReference Include="..\ext\gir.core\src\Libs\Gtk-4.0\Gtk-4.0.csproj" />
+      <ProjectReference Include="..\ext\gir.core\src\Libs\Gio-2.0\Gio-2.0.csproj" />
+      <ProjectReference Include="..\ext\gir.core\src\Libs\GObject-2.0\GObject-2.0.csproj" />
     </ItemGroup>
 
     <PropertyGroup>
@@ -9,6 +11,7 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <RootNamespace>fedinaut</RootNamespace>
     </PropertyGroup>
 
 </Project>
